@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
 
-public class Problem20200612 {
+public class Problem1 {
 
     /// <summary>
+    /// Problem #1 
+    /// Date: 20200611
+    /// 
     /// Given a list of numbers and a number k, 
     /// return whether any two numbers from the list add up to k
     /// 
