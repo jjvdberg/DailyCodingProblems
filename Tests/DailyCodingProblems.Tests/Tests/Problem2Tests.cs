@@ -8,7 +8,7 @@ namespace DailyCodingProblems.Tests.Tests {
     public class Problem2Tests {
 
         [Theory]
-        [ClassData(typeof(Problem20200612TestData))]
+        [ClassData(typeof(Problem2TestData))]
         public void OutputArrayWithMultiplesOfInputExceptI_ShouldWork(int[] input, int[] expected) {
 
             int[] actual = Problem2.OutputArrayWithMultiplesOfInputExceptI(input);
@@ -17,7 +17,7 @@ namespace DailyCodingProblems.Tests.Tests {
         }
     }
 
-    public class Problem20200612TestData : IEnumerable<object[]> {
+    public class Problem2TestData : IEnumerable<object[]> {
         public IEnumerator<object[]> GetEnumerator() {
             yield return new object[] { new int[] { 1, 2, 3, 4, 5 }, new int[] { 120, 60, 40, 30, 24 } };
             yield return new object[] { new int[] { 3, 2, 1 }, new int[] { 2, 3, 6 } };

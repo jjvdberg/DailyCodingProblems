@@ -7,7 +7,7 @@ namespace DailyCodingProblems.Tests.Tests {
 
 
         [Theory]
-        [ClassData(typeof(Problem20200611TestData))]
+        [ClassData(typeof(Problem1TestData))]
         public void ShouldFindTwoNumbersInListThatAddUpToNrK(int k, List<int> list, bool expected) {
 
             bool actual = Problem1.CanMakeNrKFromAdditionOfTwoNrsInList(k, list);
@@ -16,7 +16,7 @@ namespace DailyCodingProblems.Tests.Tests {
         }
     }
 
-    public class Problem20200611TestData : IEnumerable<object[]> {
+    public class Problem1TestData : IEnumerable<object[]> {
         public IEnumerator<object[]> GetEnumerator() {
             yield return new object[] { 17, new List<int> { 10, 15, 3, 7 }, true };
             yield return new object[] { 17, new List<int> { 7, 10, 3, 15 }, true };
